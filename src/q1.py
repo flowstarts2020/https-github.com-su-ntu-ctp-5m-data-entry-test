@@ -8,8 +8,22 @@ def swap(x, y):
     """
     return
 
+if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+        return -1
+    x = x + y
+    y = x - y
+    x = x - y
+
+    print(f"Swapped values: x = {x}, y = {y}")
 
 # Task 2
 # Invoke the function "swap" using the following scenarios:
 # - "Apple", 10
 # - 9, 17
+
+result1 = swap("Apple", 10)
+print("Result for ('Apple', 10):", result1)
+
+result2 = swap(9, 17)
+print("Result for (9, 17):", result2)
+
