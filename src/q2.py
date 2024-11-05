@@ -18,4 +18,9 @@ if not isinstance(lst, list):
 # - [1, 2, 3, 4, 2, 2], 2, 5
 # - ["apple", "banana", "apple"], "apple", "orange"
 
+result1 = find_and_replace([1, 2, 3, 4, 2, 2], 2, 5)
+print("Result for ([1, 2, 3, 4, 2, 2], 2, 5):", result1)
+
+result2 = find_and_replace(["apple", "banana", "apple"], "apple", "orange")
+print("Result for (['apple', 'banana', 'apple'], 'apple', 'orange'):", result2)
 
